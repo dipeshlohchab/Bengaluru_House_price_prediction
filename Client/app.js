@@ -37,7 +37,7 @@ function getBathValue() {
     var location = document.getElementById("uiLocations");
     var estPrice = document.getElementById("uiEstimatedPrice");
   
-    var url = "http://127.0.0.1:5000/predict_home_price"; 
+    var url = "url/predict_home_price"; 
   
     $.post(url, {
         total_sqft: parseFloat(sqft.value),
@@ -54,7 +54,7 @@ function getBathValue() {
   
   function onPageLoad() {
     console.log("Document loaded");
-    var url = "http://127.0.0.1:5000/get_location_names"; 
+    var url = "url/get_location_names"; 
   
     $.get(url, function(data, status) {
         console.log("Got response for get_location_names request");

@@ -75,7 +75,7 @@
         var sqft = document.getElementById("uiSqft").value;
         var bhk = $("input[name='uiBHK']:checked").val();
         var bath = $("input[name='uiBathrooms']:checked").val();
-        var balcony = $("input[name='uiBalcony']:checked").val();  // Added this line
+        var balcony = $("input[name='uiBalcony']:checked").val();  
         var location = document.getElementById("uiLocations").value;
 
         // Prepare the data for POST request
@@ -83,7 +83,7 @@
             total_sqft: sqft,
             bhk: bhk,
             bath: bath,
-            balcony: balcony,  // Added this line
+            balcony: balcony,  
             location: location
         };
 
